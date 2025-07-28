@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadiqa - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.2rem;
+        }
+
+        .button {
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .btn {
+            border: 2px solid white;
+            background-color: rgb(18, 1, 70);
+            border-radius: 25px;
+            color: white;
+            padding: 10px;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .footer {
+            background-color: #161a35;
+            height: 40vh;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-first {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-nav {
+            margin-bottom: 15px;
+        }
+
+        .footer-nav a {
+            color: #f1f1f1;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 16px;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+            color: rgb(132, 132, 251);
+        }
+
+        .copy-right {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .footer hr {
+            height: 1.5px;
+            /* Thickness of the line */
+            background-color: #292e43;
+            /* Color of the line */
+            border: none;
+            /* Remove default border */
+            margin: 40px 40vh 20px 40vh;
+
+        }
+
+        .footer-second img {
+            margin-top: 20px;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .footer-second img:hover {
+            width: 55px;
+            height: 55px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+                margin: 40px 20px;
+            }
+
+            .firstsection>div {
+                width: 100%;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .button {
+                margin-top: 30px;
+                margin-left: 0;
+            }
+
+            .rightsection img {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            nav .left {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            nav .right ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                gap: 10px;
+            }
+
+            nav .right ul li a {
+                font-size: 16px;
+            }
+
+            .footer {
+                height: auto;
+                padding: 20px 10px;
+            }
+
+            .footer hr {
+                margin: 20px auto;
+                width: 80%;
+            }
+
+            .footer-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                font-size: 14px;
+            }
+
+            .footer-second {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .footer-second img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .footer-second img:hover {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sadiqa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Sadiqa</span>
+                <div>and I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="images/bg.webp" alt="developer-bg">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-first">
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contactMe.html">Contact Me</a>
+            </div>
+            <p class="copy-right">&#169; 2025 Sadiqa Ansari. All rights reserved.</p>
+        </div>
+        <hr>
+        <div class="footer-second">
+            <a href="https://github.com/sadiqaansari2004" target="_blank"><img src="images/github.png"
+                    alt="github-profile"></a>
+            <a href="https://www.linkedin.com/in/sadiqa-ansari-950062342/" target="_blank"><img
+                    src="images/linkedin.webp" alt="linkedin-profile"></a>
+            <a href="https://www.naukri.com/code360/profile/a7cd0fe1-00a6-48d1-84fd-1d7d94428640" target="_blank"><img
+                    src="images/code360.png" alt="code360-profile"></a>
+            <a href="https://leetcode.com/u/sadiqa_ansari/" target="_blank"><img src="images/Leetcode.png"
+                    alt="leetcode-profile"></a>
+            <a href="https://www.geeksforgeeks.org/user/sadiqaansr63d/" target="_blank"><img src="images/gfg.png"
+                    alt="gfg-profile"></a>
+        </div>
+
+
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

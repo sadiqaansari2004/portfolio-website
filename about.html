@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+        }
+
+        .about-container h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        hr {
+            width: 800px;
+            height: 1.5px;
+            /* Thickness of the line */
+            background-color: #292e43;
+            /* Color of the line */
+            border: none;
+            /* Remove default border */
+            margin: 20px 0;
+
+        }
+
+        .about-container p {
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+
+        }
+
+        .highlight {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        .resume-btn {
+            display: block;
+            width: fit-content;
+            margin: 50px auto 0;
+            background-color: rgb(18, 1, 70);
+            color: white;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 1rem;
+            text-decoration: none;
+
+        }
+
+        .resume-btn:hover {
+            background-color: blueviolet;
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .about-container h2 {
+                font-size: 1.5em;
+            }
+
+            hr {
+                width: 100%;
+                margin: 15px 0;
+            }
+
+            .about-container p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .resume-btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                height: auto;
+            }
+
+            nav .left {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            nav .right ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav .right ul li {
+                margin: 5px 0;
+            }
+
+            nav .right ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sadiqa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="about-container">
+        <h2>About Me</h2>
+        <hr>
+        <p>
+            A detail-oriented and enthusiastic <span class="highlight">BCA student (2025)</span> from Al-Ameen Institute
+            of Information Science, Bangalore, with strong foundational knowledge in <span class="highlight">Web
+                Development</span> and <span class="highlight">Programming</span>.
+        </p>
+        <p>
+            Proficient in <span class="highlight">HTML, CSS, Python, Flask, and MySQL</span>, with hands-on experience
+            building a dynamic herbal products e-commerce website featuring secure login, product catalog, shopping
+            cart, and admin modules.
+        </p>
+        <p>
+            Skilled in <span class="highlight">C++, C, and Python</span> with good problem-solving abilities, as
+            demonstrated through active participation on platforms like <span class="highlight">LeetCode</span> and
+            <span class="highlight">GeeksforGeeks</span>.
+        </p>
+        <p>
+            A quick learner, passionate about building user-friendly web applications, and actively seeking internship
+            or entry-level opportunities in <span class="highlight">frontend or full-stack development</span> roles.
+        </p>
+        <a href="files/sadiqa_resume.pdf" class="resume-btn" target="_blank">View Resume</a>
+    </div>
+</body>
+
+</html>

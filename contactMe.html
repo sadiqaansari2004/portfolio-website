@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        hr {
+            height: 1.5px;
+            /* Thickness of the line */
+            background-color: #292e43;
+            /* Color of the line */
+            border: none;
+            /* Remove default border */
+            margin: 20px 300px;
+        }
+
+        .contact-details {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            /* Vertically center icon and text */
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .contact-item .icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+            /* Space between icon and text */
+        }
+
+        .contact-item a {
+            color: #348eff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            h2 {
+                margin-top: 60px;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            hr {
+                margin: 20px auto;
+                width: 90%;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 20px;
+            }
+
+            .contact-item {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 10px;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .contact-item .icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                height: auto;
+            }
+
+            nav .left {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            nav .right ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav .right ul li {
+                margin: 5px 0;
+            }
+
+            nav .right ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sadiqa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h2>Contact Me</h2>
+    <hr>
+    <div class="contact-details">
+        <div class="contact-item">
+            <img src="images/email.webp" alt="Email Icon" class="icon" />
+            <span>Email: <a href="mailto:sadiqaansari@gmail.com">sadiqaansari@gmail.com</a></span>
+        </div>
+
+        <div class="contact-item">
+            <img src="images/linkedin.webp" alt="LinkedIn Icon" class="icon" />
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/sadiqa-ansari-950062342/">Sadiqa Ansari</a></span>
+        </div>
+
+        <div class="contact-item">
+            <img src="images/github.png" alt="GitHub Icon" class="icon" />
+            <span>Github: <a href="https://github.com/sadiqaansari2004">sadiqaansari2004</a></span>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

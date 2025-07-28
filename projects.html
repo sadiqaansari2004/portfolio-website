@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .projectsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .card {
+            padding: 50px;
+            border-left: 5px solid blue;
+            border-radius: 8px;
+            background-color: rgb(28, 28, 80);
+            width: 30%;
+
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        hr {
+            margin: 20px;
+            margin-left: 80px;
+            width: 90%;
+            height: 1.5px;
+            /* Thickness of the line */
+            background-color: #292e43;
+            /* Color of the line */
+            border: none;
+            /* Remove default border */
+
+        }
+
+        .card h4 {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: blueviolet;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .projectsection {
+                flex-direction: column;
+                margin: 40px 20px;
+                gap: 30px;
+            }
+
+            .card {
+                width: 100%;
+                padding: 30px;
+            }
+
+            h2 {
+                margin-left: 0;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+
+            hr {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                height: auto;
+            }
+
+            nav .left {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            nav .right ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+            }
+
+            nav .right ul li {
+                margin: 5px 0;
+            }
+
+            nav .right ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sadiqa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2>Projects</h2>
+    <hr>
+    <div class="projectsection">
+
+        <div class="card">
+            <h4>Herbal Products E-Commerce Website (College Project)</h4>
+            <p>Built a dynamic herbal products shopping website with user and admin
+                modules, featuring secure login, product catalog, cart, order system, and
+                MySQL-Flask backend for seamless herbal product transactions. </p>
+        </div>
+        <div class="card">
+            <h4>Personal Portfolio Website</h4>
+            <p>Designed and developed a responsive personal portfolio website using HTML and CSS to showcase projects,
+                skills, and contact information. Focused on clean layout, intuitive navigation, and accessibility to
+                create a strong personal brand and professional web presence.</p>
+        </div>
+    </div>
+</body>
+
+</html>
